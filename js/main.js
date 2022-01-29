@@ -106,6 +106,31 @@
     });
     
 })(jQuery);
+$(document).ready(function () {
+            $.get("post.xml", function (xml){
+                $('content',xml).each(function (index){
+                    const divpara=document.createElement("div");
+                    const contain=document.getElementById("post");
+                    const parabr= document.createElement("br");
+                    const parah2 = document.createElement("h2");
+                    const paraimg = document.createElement("img");
+                    const paradate = document.createElement("a");
+                    const parap= document.createElement("p");
+                    const pararef=$(this).children("ref").text();
+                    divpara.onclick=function(){window.location.href= pararef;};
+                    contain.appendChild(divpara);
+                    parah2.innerText = $(this).children("heading").text();
+                    divpara.appendChild(parah2);
+                    paraimg.src= $(this).children("image").text();
+                    divpara.appendChild(paraimg);
+                    divpara.appendChild(parabr);
+                    paradate.innerText = $(this).children("date").text();
+                    divpara.appendChild(paradate);
+                    parap.innerText = $(this).children("body").text()+" ... Read More";
+                    divpara.appendChild(parap);
+                });
+            });
+        });
 $(document).ready(function(){
     $(".lb-cancel").attr("href","#");
     console.clear();
