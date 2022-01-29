@@ -1597,3 +1597,4 @@ a:focus {
 #post{display: flex; justify-content: space-evenly; width: 100%; align-content: center; text-align:left;}
     #post img{width: 30vw; height: 20vw;}
     #post p{width: 30vw;}
+    #post h2{width: 30vw;}
