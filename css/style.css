@@ -1600,8 +1600,8 @@ a:focus {
     #post h2{width: 30vw;}
 @media screen and (max-width: 400px){
 #post{display:block;}
-#post img{width:50vw; height: auto;}
-#post p{width:70vw}
-#post h2{width:70vw}
+#post img{width:100%; height: auto;}
+#post p{width:100%}
+#post h2{width:100%}
 }
 }
