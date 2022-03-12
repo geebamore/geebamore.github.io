@@ -7,8 +7,14 @@
             if ($('#loader').length > 0) {
                 $('#loader').removeClass('show');
             }
-        }, 1);
+        }, 1000);
     };
+    setTimeout(function(){
+        $('.main').css('display','block');
+        $('.navbar-brand').css('color','');
+    },5000);
+    $('.navbar-brand').css('color','#EF233C');
+   // 'background:#EF233C';
     loader();
     
     
@@ -117,13 +123,19 @@ $(document).ready(function () {
                     const paradate = document.createElement("a");
                     const parap= document.createElement("p");
                     const pararef=$(this).children("ref").text();
+                    divpara.style.css="cursor:hand";
                     divpara.onclick=function(){window.location.href= pararef;};
                     contain.appendChild(divpara);
                     parah2.innerText = $(this).children("heading").text();
                     divpara.appendChild(parah2);
                     paraimg.src= $(this).children("image").text();
+                    paraimg.alt='img';
+                    paraimg.loading='lazy';
+                    paraimg.width='50%';
+                    paraimg.height='30vh';
                     divpara.appendChild(paraimg);
                     divpara.appendChild(parabr);
+                    paradate.href='#';
                     paradate.innerText = $(this).children("date").text();
                     divpara.appendChild(paradate);
                     parap.innerText = $(this).children("body").text()+" ... Read More";
@@ -133,6 +145,9 @@ $(document).ready(function () {
         });
 $(document).ready(function(){
     $(".lb-cancel").attr("href","#");
+    $(".lb-prev").attr("href","#");
+    $(".lb-next").attr("href","#");
+    $(".lb-close").attr("href","#");
     console.clear();
     console.log("%cGeebamore","position: absolute; top: 10px;color: #fff; padding:5px; font-weight: bold; font-family: helvetica; pading:10px; background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)); font-size: 40px; margin:0 auto; align:center;");
 })
