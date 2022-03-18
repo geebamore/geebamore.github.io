@@ -35,6 +35,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                         <a href="#blog" class="nav-item nav-link">Blog</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="" class="nav-item nav-link"><p class="dark" onclick="change()" style="text-align:center;padding: 0px 2px 0px 2px;border:1px solid black">Dark View</p></a>
+                        <style>.dark:hover{border:1px solid black;}</style>
                     </div>
                 </div>
             </div>
@@ -500,7 +502,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <script defer src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script defer src="lib/isotope/isotope.pkgd.min.js"></script>
         <script  defer src="lib/lightbox/js/lightbox.min.js"></script>
-        
+        <script>
+            var i=0;
+        function change(){
+            if(i%2==0){
+        var k=document.getElementsByClassName("dark")[0];
+            k.innerHTML="Light View";
+            document.getElementById("home").style.css="background: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, .95)), url(../img/myself.jpg);";
+            document.body.style.css='background:black';
+                i++;
+        }
+            else{
+                  var k=document.getElementsByClassName("dark")[0];
+            k.innerHTML="Dark View";
+            document.getElementById("home").style.css="background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/myself.jpg);";
+            document.body.style.css='background:transparent';
+            i++;
+            }
+        </script>
         <!-- Contact Javascript File -->
        
         <!--Start of Tawk.to Script-->
