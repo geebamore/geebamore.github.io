@@ -508,15 +508,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             if(i%2==0){
         var k=document.getElementsByClassName("dark")[0];
             k.innerHTML="Light View";
+                $("body").css('background','black');
            $(".hero").css("background"," linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, .95)), url(../img/myself.jpg)");
-            $("body").css('background','black');
                 i++;
         }
             else{
                   var k=document.getElementsByClassName("dark")[0];
             k.innerHTML="Dark View";
+                 $("body").css('background','transparent');
             $(".hero").css("background","linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/myself.jpg)");
-            $("body").css('background','transparent');
             i++;
             }}
         </script>
