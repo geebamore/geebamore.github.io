@@ -8,26 +8,6 @@
         <meta name="keywords" content="geebamore, durgapur, india, web design, wix logo, website development, google web designer, web design company, responsive design, responsive web design, web page design, best website design, website layout, web design agency, graphic design website, website designer near me, web designers near me, website development company, responsive website, web design services, freelance web designer, web design and development, website designer, html and css design and build websites, web design company, ecommerce website design, website design services">
         <!-- Favicon -->
         <link href="#" rel="icon">
-        <script>
-        (function () {
-    var token = document.head.querySelector('meta[name="csrf-token"]');
-    var site_domain = window.location.origin;
-
-    if (token) {
-        var op = XMLHttpRequest.prototype.open;
-        XMLHttpRequest.prototype.open = function (method, url) {
-            var resp = op.apply(this, arguments);
-            var internal_request = url.indexOf(site_domain, 0) === 0 || url.indexOf('http') !== 0;
-
-            if (internal_request) {
-                this.setRequestHeader('X-CSRF-Token', token.content);
-            }
-
-            return resp;
-        };
-    }
-}());
-        </script>
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
