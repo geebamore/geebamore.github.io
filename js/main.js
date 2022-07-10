@@ -9,10 +9,6 @@
             }
         }, 1000);
     };
-    setTimeout(function(){
-        $('.main').css('display','block');
-        $('.navbar-brand').css('color','');
-    },5000);
     $('.navbar-brand').css('color','#EF233C');
    // 'background:#EF233C';
     loader();
