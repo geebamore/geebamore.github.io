@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://geebamore.github.io/portfolio/sitemap.xml
+Sitemap: http://geebamore.github.io/sitemap.xml
