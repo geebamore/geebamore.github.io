@@ -24,6 +24,6 @@ About
 Contact
 -
 - 📫 Email: [geebamore@gmail.com]
-      Website:[https://geebamore.github.io] 
+      Website:[https://geebamore.com] 
 
 # ⚡⚡ Learning Is Fun ⚡⚡ #
