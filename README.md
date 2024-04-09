@@ -23,7 +23,7 @@ About
 
 Contact
 -
-- 📫 Email: [geebamore@gmail.com]
+- 📫 Email: [contact@geebamore.com]
       Website:[https://geebamore.com] 
 
 # ⚡⚡ Learning Is Fun ⚡⚡ #
