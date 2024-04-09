@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 
-Sitemap: http://geebamore.github.io/sitemap.xml
+Sitemap: http://geebamore.com/sitemap.xml
