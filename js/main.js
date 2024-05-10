@@ -36,9 +36,10 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('nav-sticky');
+            $('.navbar-brand').css('color','#EF233C');
         } else {
             $('.navbar').removeClass('nav-sticky');
-            $('.navbar-brand').css('color','#EF233C');
+            $('.navbar-brand').css('color','#ffff');
         }
     });
     
