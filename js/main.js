@@ -38,6 +38,7 @@
             $('.navbar').addClass('nav-sticky');
         } else {
             $('.navbar').removeClass('nav-sticky');
+            $('.navbar-brand').css('color','#EF233C');
         }
     });
     
