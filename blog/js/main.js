@@ -9,7 +9,7 @@
             }
         }, 1000);
     };
-    $('.navbar-brand').css('color','#EF233C');
+    $('.navbar-brand').css('color','#ffff');
    // 'background:#EF233C';
     loader();
     
