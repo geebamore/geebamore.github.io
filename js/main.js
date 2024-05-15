@@ -149,3 +149,4 @@ $(document).ready(function(){
     console.clear();
     console.log("%cGeebamore","position: absolute; top: 10px;color: #fff; padding:5px; font-weight: bold; font-family: helvetica; pading:10px; background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)); font-size: 40px; margin:0 auto; align:center;");
 })
+
