@@ -122,6 +122,7 @@ $(document).ready(function () {
                     const parap= document.createElement("p");
                     const pararef=$(this).children("ref").text();
                     divpara.style.css="cursor:hand";
+                    divpara.href=pararef;
                     divpara.onclick=function(){window.location.href= pararef;};
                     contain.appendChild(divpara);
                     parah2.innerText = $(this).children("heading").text();
@@ -136,7 +137,7 @@ $(document).ready(function () {
                     paradate.href='#';
                     paradate.innerText = $(this).children("date").text();
                     divpara.appendChild(paradate);
-                    parap.innerText = $(this).children("body").text()+"<a href="+$(this).children("ref").text()+"> ... Read More</a>";
+                    parap.innerText = $(this).children("body").text()+" ... Read More";
                     divpara.appendChild(parap);
                 });
             });
