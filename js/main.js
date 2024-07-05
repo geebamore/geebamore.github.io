@@ -136,7 +136,7 @@ $(document).ready(function () {
                     paradate.href='#';
                     paradate.innerText = $(this).children("date").text();
                     divpara.appendChild(paradate);
-                    parap.innerText = $(this).children("body").text()+" ... Read More";
+                    parap.innerText = $(this).children("body").text()+"<a href="+$(this).children("ref").text()+"> ... Read More</a>";
                     divpara.appendChild(parap);
                 });
             });
